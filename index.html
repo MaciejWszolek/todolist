@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            background-color: lightblue;
+        }
+
+        input:focus {
+            background-color: white;
+        }
+
+        body {
+            font-family: sans-serif;
+
+        }
+
+        div.form {
+            width: 90vw;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: darkturquoise;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        h1.head {
+            text-align: center;
+        }
+
+        button {
+            margin-left: 20px;
+            padding: 10px 5px;
+            background-color: cornflowerblue;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            transition: .1s linear;
+        }
+
+        button:hover {
+            background-color: darkslateblue;
+            color: white;
+        }
+    </style>
+    <h1 class="head">TO DO LIST</h1>
+    <div class="form">
+        <form action="">
+            <h2>Wpisz tutaj swoje zadanie:</h2>
+            <input type="text">
+            <button class="add">Dodaj element</button>
+        </form>
+        <form class="search" action="">
+            <h2>Wyszukaj zadanie:</h2>
+            <input type="text">
+        </form>
+        <h1>Masz <span>0</span> zadań do wykonania:</h1>
+        <ul></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
